@@ -3,91 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <title>Andrey CV</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <table cellspacing="15">
-        <tr>
-            <td>
-                <img src="avatar.jpg" width="300" alt="тут моя фотка"/>
-            </td>
-            <td>  
+    <div class="container">
+        <div class="info">
+            <img src="avatar.jpg" alt="тут моя фотка" class="avatar"/>
+            <div class="info-text">
                 <h1>Андрей Ухалов</h1>
                 <p><em>Я создатель <strong>планеты земля</strong></em></p>
                 <p>Жестко развиваюсь и добиваюсь своих поставленных целей, если мне повезет</p>
-            </td>
-        </tr>
-    </table>
+                <h2>Мои социальные сети:</h2>
+                    <a href="https://t.me/Andrezlord" target="_blank"> Telegram</a>
+                    |
+                    <a href="https://vk.com/andreyuhalov" target ="_blank">VK</a>
+            </div>
+        </div>
+        <div class="card bg-yellow">
+            <h2>Мои навыки:</h2>
+            <ol type="I" class="list">
+                <li>Разъеб в покере</li>
+                <li>Могу разбивать лед в щепки 24/7</li>
+                <li>Разъеб в любую пк игру</li>
+            </ol>
+        </div>
 
-    <hr>
+        <div class="card bg-green">
+            <h2>Опыт работы:</h2>
+        <table class="table">
+            <tbody>
+                <tr>
+                    <td>Армия</td>
+                    <td>Стрелок</td>
+                    <td>2022-2023</td>
+                </tr>
+                <tr>
+                    <td>Покер</td>
+                    <td>12 ранг FF</td>
+                    <td>2024-2025</td>
+                </tr>
+                <tr>
+                    <td>Фриланс</td>
+                    <td>Грязь из под ногтя</td>
+                    <td>2025-2025</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
 
-    <h2>Мои социальные сети:</h2>
-    <ul type="square">
-        <li><a href="https://t.me/Andrezlord" target="_blank"> Telegram</a></li>
-        <li><a href="https://vk.com/andreyuhalov" target ="_blank">VK</a></li>
-    </ul>
-
-    <hr>
-
-    <h2>Мои навыки:</h2>
-    <ol type="I">
-        <li>Разъеб в покере</li>
-        <li>Могу разбивать лед в щепки 24/7</li>
-        <li>Разъеб в любую пк игру</li>
-    </ol>
-
-    <hr>
-
-    <h2>Опыт работы:</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Компания</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Армия</td>
-                <td>Стрелок</td>
-                <td>2022-2023</td>
-            </tr>
-            <tr>
-                <td>Фриланс</td>
-                <td>Грязь из под ногтя</td>
-                <td>2025-</td>
-            </tr>
-        </tbody>
-    </table>
+        <div class="card bg-red">
+            <h2>Список достижений:</h2>
+        <ul type="disc">
+            <li><a href="achievement.html">Посмотреть список</a></li>
+        </ul>
+        </div>
+        
+        <div class="contact">
+            <h2>Связаться со мной:</h2>
     
-    <hr>
+            <form action="/">
+                <div class="row">
+                    <div class="margin-default">
+                        <label for="name" >Ваше имя:</label>
+                        <input type="text" id="name" placeholder="Введите ваше имя...">
+                    </div>
+        
+                    <div class="margin-default">
+                        <label for="email" >Ваш email:</label>
+                        <input type="email" id="email" placeholder="Введите email...">
+                    </div>
+                </div>
 
-    <h2>Список достижений:</h2>
-    <ul type="disc">
-        <li><a href="achievement.html">Посмотреть список</a></li>
-    </ul>
+                <div class="margin-default">
+                <label for="text">Ваше сообщение:</label>
+                <textarea name="" id="text"></textarea>
+                </div>
+        
+                <input class="button-contact"type="submit" value="Связаться!">
+            </form>  
+        </div>
 
-    <h2>Связяться со мной</h2>
+        <div class="position">
+            <div class="box"></div>
+        </div>
 
-    <form action="/">
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="name" placeholder="Введите ваше имя...">
-
-        <br>
-
-        <label for="email">Ваш Email:</label>
-        <input type="email" id="email" placeholder="Введите email...">
-
-        <br>
-
-        <label for="text">Ваше сообщение:</label>
-        <br>
-        <textarea name="" id="text"></textarea>
-
-        <br>
-
-        <input type="submit" value="Связаться!">
-    </form>
-
+    </div>
 </body>
 </html>
